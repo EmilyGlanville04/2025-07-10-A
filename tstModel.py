@@ -1,10 +1,8 @@
-from model.category import Category
+
 from model.model import Model
 
 mymdl = Model()
 
-c = Category(5, "Electric Bikes")
-mymdl.buildGraph(c)
-n,e = mymdl.getGraphDetails()
+mymdl.buildGraph(5,"2016-01-03","2016-01-30")
 
-print("N nodi:", n, "N archi:", e)
+print(mymdl.getGraphDetails())
